@@ -1,6 +1,7 @@
 import time
 import random
 import os
+import uuid
 from pathlib import Path
 
 import numpy as np
@@ -257,7 +258,7 @@ class FastEdit:
         
         print("FastEdit initialized successfully!")
     
-    def edit_image(self, image_path, prompt, output_path=None, num_steps=50, 
+    def edit_image(self, image_path, prompt, output_dir=None, num_steps=50, 
                    guidance_scale=2.5, num_interpolations=9, learning_rate=4e-4):
         """
         Edit an image based on a text prompt.
@@ -333,11 +334,13 @@ class FastEdit:
         result_grid = make_grid(images_tensor, nrow=min(5, num_interpolations), padding=2)
         
         # Save output
-        if output_path is None:
-            output_path = f"output_{Path(image_path).stem}_{int(time.time())}.jpg"
+        Path(output_dir).mkdir(parents=True, exist_ok=True)
+        # Generate unique filename
+        unique_id = uuid.uuid4().hex[:8]
+        save_path = str(Path(output_dir) / f"edited_{unique_id}.png")
         
-        save_image(result_grid, output_path)
-        print(f"Results saved to: {output_path}")
+        save_image(result_grid, save_path)
+        print(f"Results saved to: {save_path}")
         
         total_time = time.time() - start_time
         print(f"Total editing time: {total_time:.2f}s")
@@ -348,7 +351,7 @@ class FastEdit:
 def main(
     image: str,
     prompt: str,
-    output: str = None,
+    output_dir: str = None,
     steps: int = 50,
     guidance: float = 2.5,
     interpolations: int = 10,
@@ -364,7 +367,7 @@ def main(
     result = editor.edit_image(
         image_path=image,
         prompt=prompt,
-        output_path=output,
+        output_dir=output_dir,
         num_steps=steps,
         guidance_scale=guidance,
         num_interpolations=interpolations,
@@ -373,8 +376,3 @@ def main(
 
     print("Editing complete!")
     return result
-
-image = "assets/images/Mona_Lisa.jpg"
-prompt = "A painting of Mona Lisa wearing a hat."
-
-main(image=image, prompt=prompt)

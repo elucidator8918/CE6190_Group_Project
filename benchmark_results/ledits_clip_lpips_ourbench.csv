@@ -1,0 +1,13 @@
+image,prompt,lpips,clip_score
+whoosh01.jpg,A high-speed train under a rainbow in the sky.,0.1963798552751541,17.15646743774414
+turtle.jpg,A turtle wearing a small party hat.,0.2558996081352234,19.14776039123535
+sunset.jpg,A building with a giant glowing star in the sky.,0.10941493511199951,16.91438865661621
+peacocks.jpg,Peacocks with colorful balloons tied to their feet.,0.16831472516059875,12.521834373474121
+locomotive02.jpg,A vintage locomotive with a friendly cartoon face on the front.,0.20158512890338898,16.62504768371582
+locomotive01.jpg,A train with a giant present box on its roof.,0.2594473659992218,16.057575225830078
+iguana.jpg,An iguana holding a miniature flag.,0.2539574205875397,13.900449752807617
+drainage.jpg,A pathway with glowing footprints.,0.24576880037784576,16.244098663330078
+doors.jpg,A hallway with a path of stepping stones.,0.0765351951122284,17.26433753967285
+clock.jpg,A clock with an emoji face instead of numbers.,0.18820717930793762,16.29232406616211
+cat02.jpg,A cat wearing tiny sunglasses.,0.2170642614364624,14.830419540405273
+car.jpg,A pickup truck with a giant stack of pancakes in its bed.,0.19926993548870087,14.794225692749023

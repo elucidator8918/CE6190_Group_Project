@@ -1,0 +1,55 @@
+image,prompt,lpips,clip_score
+dog2_standing.jpg,A photo of a sitting dog,0.7048942446708679,19.5239200592041
+dog2_standing.jpg,A photo of a jumping dog.,0.7569244503974915,19.077556610107422
+dog2_standing.jpg,A photo of a dog laying down.,0.7083908915519714,17.497905731201172
+dog2_standing.jpg,A photo of a yawning dog.,0.7511901259422302,18.04438018798828
+dog2_standing.jpg,A photo of a dog standing on a beach.,0.7125279307365417,17.076160430908203
+dog2_standing.jpg,A painting of a dog.,0.7184693813323975,17.15410041809082
+cat.jpeg,A photo of a cat in a green grass field.,0.685818076133728,16.400415420532227
+cat.jpeg,A photo of a cat laying down.,0.6359041333198547,17.70063018798828
+cat.jpeg,A photo of a cat with a hat.,0.7037476301193237,15.316733360290527
+dog.png,A photo of a standing corgi dog.,0.6079668998718262,18.775442123413086
+dog.png,A photo of a corgi dog with blue background.,0.7009428143501282,16.724885940551758
+dog.png,A photo of a cat.,0.6810494065284729,18.20433807373047
+dog.png,A cartoon image of a corgi dog.,0.5931060314178467,21.14362907409668
+dog.png,A photo of a corgi dog running on the ground.,0.7278234958648682,18.145572662353516
+Meisje_met_de_parel.jpg,A painting of a girl wearing glasses.,0.6475057005882263,16.167926788330078
+Meisje_met_de_parel.jpg,A painting of a girl in the style of Vincent Van Gogh.,0.7787418365478516,13.911646842956543
+Meisje_met_de_parel.jpg,A painting of a girl in the style of Leonardo da Vinci.,0.6346086263656616,17.123979568481445
+Meisje_met_de_parel.jpg,A painting of a girl with light background.,0.569865882396698,17.813926696777344
+Meisje_met_de_parel.jpg,A painting of a girl smiling with a big grin.,0.6384250521659851,18.879587173461914
+Mona_Lisa.jpg,A painting of Mona Lisa wearing a hat.,0.6717362403869629,15.777024269104004
+benz.jpg,A photo of a benz car driving on a road,0.7155160903930664,18.991132736206055
+benz.jpg,A photo of a red benz car.,0.7845543622970581,16.027063369750977
+tiger_2.jpg,A cartoon image of a tiger.,0.7086818814277649,22.480751037597656
+tiger_2.jpg,A photo of a tiger hidding in the jungle.,0.6917409896850586,16.498435974121094
+tiger_2.jpg,A photo of rain falling on the tiger.,0.7034398317337036,15.948674201965332
+tiger_2.jpg,A photo of a ferocious tiger.,0.6943701505661011,16.926240921020508
+tiger_2.jpg,A photo of a tiger facing the camera,0.6666802763938904,17.371950149536133
+standing_man.jpg,A photo of a man sitting on the mountain.,0.6031771898269653,18.948728561401367
+standing_man.jpg,A photo of a man standing on a mountain with a storm.,0.6414453983306885,17.048465728759766
+standing_man.jpg,A photo of a man standing on a mountain with stars on the sky.,0.6751688122749329,19.881834030151367
+standing_man.jpg,A photo of a man with snow on the mountain.,0.6244714260101318,17.502466201782227
+standing_man.jpg,A photo of a man wearing a shirt standing on a mountain.,0.6389650106430054,18.16020965576172
+standing_man.jpg,A photo of a man standing on a mountain at night.,0.6807867288589478,21.8055419921875
+standing_man.jpg,A photo of a man standing in a forest.,0.7025742530822754,18.869401931762695
+man_beach.jpg,A photo of a man walking on a road,0.6434823274612427,19.480712890625
+man_beach.jpg,A photo of a man wearing a jacket walking on the beach.,0.5515781044960022,16.86651611328125
+man_beach.jpg,A photo of a man walking in the forest,0.699516773223877,18.48044776916504
+man_beach.jpg,A photo of a man wearing a sunglass walking on the beach,0.5599397420883179,17.263084411621094
+man_beach.jpg,A photo of a man walking on the beach at sunset,0.5990442633628845,17.277124404907227
+paris.jpg,A photo of a street in paris with snow on the street.,0.644997239112854,13.913152694702148
+paris.jpg,A photo of a empty street in paris with the Eiffel Tower.,0.6272256374359131,15.701892852783203
+paris.jpg,A photo of a man in the center of street in paris with the Eiffel Tower.,0.617603063583374,15.943140029907227
+paris.jpg,A oil painting of a street in paris with the Eiffel Tower.,0.6150479316711426,13.395092964172363
+paris.jpg,A photo of a street in paris with the Eiffel Tower in cloudy weather.,0.6281493902206421,13.66397476196289
+forest.jpg,A photo of a path across the middle of the forest.,0.6268398761749268,18.03824806213379
+forest.jpg,A photo of a forest in autumn.,0.6696128845214844,16.942935943603516
+forest.jpg,A photo of a forest in winter.,0.6901707649230957,17.272647857666016
+forest.jpg,A oil painting of a forest.,0.6270570755004883,15.770451545715332
+forest.jpg,A cartoon image of a forest.,0.6589640378952026,20.500782012939453
+teddy_1.jpeg,A photo of a fat teddy bear,0.6271812915802002,17.5905818939209
+teddy_1.jpeg,A photo of a thin teddy bear,0.636112630367279,20.24251365661621
+teddy_1.jpeg,A photo of a standing teddy bear.,0.5856321454048157,19.580814361572266
+teddy_1.jpeg,A photo of a dancing teddy bear.,0.617969274520874,19.5969181060791
+teddy_1.jpeg,A sketch painting of a teddy bear,0.5991971492767334,17.23558235168457

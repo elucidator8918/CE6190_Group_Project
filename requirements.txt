@@ -1,0 +1,11 @@
+accelerate==0.25.0 
+pillow 
+torchvision 
+requests 
+transformers==4.42 
+huggingface-hub==0.23.2 
+peft==0.12 
+lpips 
+pandas 
+torchmetrics
+diffusers==0.27.2

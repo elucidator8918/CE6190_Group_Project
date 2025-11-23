@@ -27,7 +27,7 @@ class LEDitsImageEditor:
             torch_dtype=self.dtype
         )
         self.pipeline = self.pipeline.to(self.device)
-        self.pipeline.enable_vae_tiling()
+        #self.pipeline.enable_vae_tiling() # works in latest version of diffusers
         print("Model loaded successfully!")
         
         self.inverted = False
@@ -130,7 +130,7 @@ def edit_image_simple(
     edit_threshold: float = 0.75,
     output_path: Optional[str] = None,
     auto_save: bool = True,
-    output_dir: str = "outputs"
+    output_dir: str = "outputs/leditsppted"
 ) -> tuple[Image.Image, str]:
     """
     Simple one-function interface to edit an image.
@@ -183,51 +183,3 @@ def edit_image_simple(
         print(f"Saved to {save_path}")
     
     return edited_image, save_path
-
-
-# Example usage
-if __name__ == "__main__":
-    # Method 1: Simple one-function call with auto UUID naming
-    print("=== Simple Method (Auto UUID) ===")
-    edited, path = edit_image_simple(
-        "input.jpg",
-        "cherry blossom",
-        edit_guidance_scale=10.0
-    )
-    print(f"Image saved to: {path}")
-    
-    # Method 2: Custom output path
-    print("\n=== Simple Method (Custom Path) ===")
-    edited, path = edit_image_simple(
-        "input.jpg",
-        "sunset",
-        output_path="my_custom_output.png"
-    )
-    
-    # Method 3: Using the class for more control
-    print("\n=== Advanced Method ===")
-    editor = LEDitsImageEditor()
-    
-    # Invert the image
-    editor.invert_image(
-        "input.jpg",
-        source_prompt="",
-        num_inversion_steps=50,
-        skip=0.15
-    )
-    
-    # Edit with multiple prompts
-    edited = editor.edit_image(
-        editing_prompt=["sunset", "warm lighting"],
-        edit_guidance_scale=12.0,
-        edit_threshold=0.7,
-        reverse_editing_direction=False
-    )
-    
-    # Save with UUID
-    unique_id = uuid.uuid4().hex[:8]
-    output_path = f"outputs/advanced_{unique_id}.png"
-    Path("outputs").mkdir(exist_ok=True)
-    edited.save(output_path)
-    print(f"Saved to: {output_path}")
-    print("Done!")
