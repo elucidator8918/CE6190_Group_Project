@@ -92,8 +92,6 @@ Each method is evaluated on two benchmark datasets using standardized metrics to
 - Pinned versions for reproducibility
 - Compatible with Python 3.10.19
 
-
-
 ## Setup Instructions
 
 ### 1. Environment Setup
@@ -180,8 +178,6 @@ python bench.py
 
 This will systematically benchmark every method on every dataset.
 
-
-
 ## Benchmark Output
 
 ### Generated Files
@@ -215,15 +211,13 @@ image002.jpg,snowy mountain,0.2891,0.8156
 - Higher = more perceptual change
 
 **CLIP Score:**
-- Range: 0.0 to 1.0 (typically)
+- Range: 0.0 to 100.0
 - Higher = better text-image alignment
 - Indicates semantic accuracy of edit
 
 **Ideal Results:**
 - Moderate LPIPS (preserves image structure)
 - High CLIP score (accurate to prompt)
-
-
 
 ## Hardware Requirements utilized
 
